@@ -1,6 +1,8 @@
 Sessionizer::Application.routes.draw do
   root to: 'schedules#index'
 
+  default_url_options :host => "samvera.org"
+
   get '/home' => 'pages#home', as: :home_page
   get '/map' => 'pages#map', as: :event_map
 
