@@ -48,7 +48,7 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  HOST = 'samvera.org'.freeze
+  HOST = 'sessionizer.vm'
   config.action_mailer.default_url_options = { host: HOST }
   ActionMailer::Base.smtp_settings = {
     :user_name => Rails.application.secrets.smtp_username,
